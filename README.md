@@ -7,6 +7,7 @@ Päringud:
 GET:
 
 Küsi kõik raamatud: http://localhost:8080/Raamat/rest/RaamatService/Book
+
 Küsi raamat id järgi: http://localhost:8080/Raamat/rest/RaamatService/Book/id
 
 POST:
