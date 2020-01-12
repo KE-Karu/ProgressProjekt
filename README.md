@@ -21,3 +21,17 @@ Lisa raamat: http://localhost:8080/Raamat/rest/RaamatService/Book
 		"ISBN": "9788498199246"
 	}
 }
+
+Muuda raamatut: http://localhost:8080/Raamat/rest/RaamatService/Book/id
+
+{
+	"request": {
+		"bookSet": {
+			"updateBook": [{
+				"bookTitle": "Lolita",
+				"author": "Vladimir Nabokov",
+				"ISBN": "9789949589890"
+			}]
+		}
+	}
+}
