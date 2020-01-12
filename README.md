@@ -13,6 +13,7 @@ Küsi raamat id järgi: http://localhost:8080/Raamat/rest/RaamatService/Book/id
 POST:
 
 Lisa raamat: http://localhost:8080/Raamat/rest/RaamatService/Book
+
 {
 	"request": {
 		"bookTitle": "Anna Karenina",
