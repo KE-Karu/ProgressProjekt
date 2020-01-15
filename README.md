@@ -32,11 +32,11 @@ Muuda raamatut: http://localhost:8810/Library/rest/LibraryService/Book/{BookID}
 
 	{     
    	"request":{
-      		"BookSet":{
+      	"BookSet":{
          		"updateBook":[{
-			       "Author":"value1",
-			       "ISBN":"98463853334",
-			       "BookTitle":"Lolita"
+				"Author":"value1",
+				"ISBN":"98463853334",
+				"BookTitle":"Lolita"
             			}]
 			}
    		}
