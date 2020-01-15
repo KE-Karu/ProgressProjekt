@@ -20,6 +20,7 @@ Lisa raamat: http://localhost:8810/Library/rest/LibraryService/Book
 
 {
 	"request":{
+	
 		"bookTitle": "Hairy Potter",
 		"Author":"A.Lindsn",
 		"ISBN":"999999992"
@@ -31,8 +32,11 @@ PUT:
 Muuda raamatut: http://localhost:8810/Library/rest/LibraryService/Book/{BookID}
 
 {  
-   "request":{  
+   
+   "request":{
+   
       "BookSet":{  
+      
          "updateBook":[
             {
                "Author":"value1",
@@ -60,7 +64,9 @@ POST:
 
 Lisa klient: http://localhost:8810/Library/rest/LibraryService/Customer
 {
+
 	"request":{
+	
 		"custName": "Meelis Tusik",
 		"email":"Meelis123@gmail.com",
 		"country":"EST"
@@ -71,8 +77,11 @@ PUT:
 
 Muuda klienti: http://localhost:8810/Library/rest/LibraryService/Customer/{CustomerID}
 {
+	
 	"request":{
+	
 		"custSet":{
+		
 			"updateCust":[{
 			"FullName": "Joonas Tamm",
 		        "EmailAddress":"JoonasT@gmail.com",
@@ -95,7 +104,9 @@ POST:
 
 Lisa laenutus: http://localhost:8810/Library/rest/LibraryService/Loan
 {
+	
 	"request":{
+	
 		"CustomerID": "6",
 		"BookID":"13"
 	}
@@ -105,7 +116,9 @@ PUT:
 
 Tagasta raamat:http://localhost:8810/Library/rest/LibraryService/Loan
 {
+
 	"request":{
+	
 		"LoanID": "4",
 		"BookID":"10"
 	}
