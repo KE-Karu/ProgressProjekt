@@ -106,4 +106,3 @@ Tagasta raamat:http://localhost:8810/Library/rest/LibraryService/Loan
 		"BookID":"10"
 	}
 }	
-.
