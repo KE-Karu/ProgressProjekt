@@ -18,35 +18,29 @@ POST:
 
 Lisa raamat: http://localhost:8810/Library/rest/LibraryService/Book
 
-{
+	{
 	"request":{
-	
 		"bookTitle": "Hairy Potter",
 		"Author":"A.Lindsn",
 		"ISBN":"999999992"
+		}
 	}
-}
 
 PUT:
 
 Muuda raamatut: http://localhost:8810/Library/rest/LibraryService/Book/{BookID}
 
-{  
-   
-   "request":{
-   
-      "BookSet":{  
-      
-         "updateBook":[
-            {
-               "Author":"value1",
-               "ISBN":"98463853334",
-               "BookTitle":"Lolita"
-            }
-         ]
-      }
-   }
-}
+	{     
+   	"request":{
+      		"BookSet":{
+         		"updateBook":[{
+			       "Author":"value1",
+			       "ISBN":"98463853334",
+			       "BookTitle":"Lolita"
+            			}]
+			}
+   		}
+	}
 
 CUSTOMER klassi päringud:
 
@@ -63,33 +57,30 @@ NB! Klienti, kellel on aktiivsed laenutused, ei saa kustutada!
 POST:
 
 Lisa klient: http://localhost:8810/Library/rest/LibraryService/Customer
-{
-
-	"request":{
 	
+	{
+	"request":{	
 		"custName": "Meelis Tusik",
 		"email":"Meelis123@gmail.com",
 		"country":"EST"
+		}
 	}
-}
 
 PUT:
 
 Muuda klienti: http://localhost:8810/Library/rest/LibraryService/Customer/{CustomerID}
-{
-	
-	"request":{
-	
-		"custSet":{
-		
+
+	{	
+	"request":{	
+		"custSet":{		
 			"updateCust":[{
-			"FullName": "Joonas Tamm",
-		        "EmailAddress":"JoonasT@gmail.com",
-		        "Country":"FIN"
-			}]
+				"FullName": "Joonas Tamm",
+		        	"EmailAddress":"JoonasT@gmail.com",
+		        	"Country":"FIN"
+				}]
+			}
 		}
 	}
-}
 
 LOAN klassi päringud:
 
@@ -103,23 +94,21 @@ Küsi laenud raamatu id järgi: http://localhost:8810/Library/rest/LibraryServic
 POST:
 
 Lisa laenutus: http://localhost:8810/Library/rest/LibraryService/Loan
-{
-	
-	"request":{
-	
+
+	{	
+	"request":{	
 		"CustomerID": "6",
 		"BookID":"13"
+		}
 	}
-}
 
 PUT:
 
 Tagasta raamat:http://localhost:8810/Library/rest/LibraryService/Loan
-{
 
-	"request":{
-	
+	{
+	"request":{	
 		"LoanID": "4",
 		"BookID":"10"
-	}
-}	
+		}
+	}	
