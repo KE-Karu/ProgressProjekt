@@ -13,6 +13,7 @@ Küsi raamat id järgi: http://localhost:8810/Library/rest/LibraryService/Book/{
 DELETE:
 Kustuta raamat id järgi: http://localhost:8810/Library/rest/LibraryService/Book/{BookID}
 NB! Raamatut, millel on aktiivne laenutus, ei saa kustutada!
+
 POST:
 
 Lisa raamat: http://localhost:8810/Library/rest/LibraryService/Book
@@ -24,6 +25,7 @@ Lisa raamat: http://localhost:8810/Library/rest/LibraryService/Book
 		"ISBN":"999999992"
 	}
 }
+
 PUT:
 
 Muuda raamatut: http://localhost:8810/Library/rest/LibraryService/Book/{BookID}
@@ -80,6 +82,7 @@ Muuda klienti: http://localhost:8810/Library/rest/LibraryService/Customer/{Custo
 }
 
 LOAN klassi päringud:
+
 GET:
 
 Küsi kõik laenud: http://localhost:8810/Library/rest/LibraryService/Loan
