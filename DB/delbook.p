@@ -1,0 +1,5 @@
+TRIGGER PROCEDURE FOR DELETE OF Book.
+
+FOR EACH bin OF book:
+     DELETE bin.
+END.
